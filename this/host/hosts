@@ -7,7 +7,7 @@ ansible_become_password=u
 ansible_user=me
 
 [pi]
-pi1
+pi0
 
 [pi:vars]
 ansible_become_password=u

@@ -9,3 +9,7 @@
   template:
     src: .x2goclient/sessions
     dest: '/home/{{ansible_user}}/.x2goclient/sessions'
+
+- name:
+  debug:
+    var: hostvars['pi0']['eth_ip']

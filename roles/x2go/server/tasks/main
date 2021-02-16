@@ -1,7 +1,9 @@
 ---
+- include_tasks: get ip
+
 - name: Install X2goserver
   apt:
     pkg:
     - x2goserver
-    update_cache: yes
+    # update_cache: yes
   become: true

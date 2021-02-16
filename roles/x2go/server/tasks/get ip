@@ -1,0 +1,7 @@
+---
+
+- name: Set ip of Raspberry Pi
+  set_fact:
+    eth_ip: '{{ansible_facts.eth0.ipv4.address}}'
+
+# {{ hostvars['foo.example.com']['ansible_eth0']['ipv4']['address'] }}
