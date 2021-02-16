@@ -1,8 +1,8 @@
 ---
-# - hosts: local
-#   roles:
-#     - x2go/client
-
 - hosts: pi
   roles:
     - x2go/server
+
+- hosts: local
+  roles:
+    - x2go/client

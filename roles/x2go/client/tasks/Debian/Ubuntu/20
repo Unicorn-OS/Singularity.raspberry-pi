@@ -1,0 +1,7 @@
+---
+- name: Install X2goclient
+  apt:
+    pkg:
+    - x2goclient
+    - x2gothinclient-common
+  become: true
