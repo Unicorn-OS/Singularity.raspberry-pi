@@ -6,3 +6,4 @@
 - hosts: local
   roles:
     - x2go/client
+    - x2go/connection

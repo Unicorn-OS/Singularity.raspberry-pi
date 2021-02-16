@@ -1,1 +1,11 @@
 ---
+
+- name: Create a directory .x2goclient
+  file:
+    path: '/home/{{ansible_user}}/.x2goclient'
+    state: directory
+
+- name: Template
+  template:
+    src: .x2goclient/sessions
+    dest: '/home/{{ansible_user}}/.x2goclient/sessions'
